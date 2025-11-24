@@ -1,11 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-	<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orhun Efe - Kişisel Portföy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .skills, .projects, .contact {
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .about:hover, .skills:hover, .projects:hover, .contact:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li {
+            background: #ff6b6b;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px;
+            background: #4ecdc4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45b7aa;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .skills ul { flex-direction: column; align-items: center; }
+        }
+    </style>
 </head>
 <body>
-	<!-- <a href = "https://steamcommunity.com/id/destroyeros58/">Steam Account</a> </br> 
-	<a href = "https://www.instagram.com/thefee0/">İnstagram Account</a>  -->
-	<img src = "images/image.png" height="900" width="1660">
+    <header>
+        <h1>Merhaba, Ben Orhun Efe</h1>
+        <p>Yazılım Geliştirici, Tasarımcı ve Yenilikçi Düşünür</p>
+    </header>
+
+    <section class="about">
+        <h2>Hakkımda</h2>
+        <p>Merhaba! Ben Orhun Efe, teknoloji ve yaratıcılık tutkusuyla dolu bir yazılım geliştiriciyim. Modern web teknolojileri, mobil uygulamalar ve yapay zeka projeleri üzerinde çalışıyorum. Amacım, kullanıcı dostu ve yenilikçi çözümler üreterek dünyayı biraz daha iyi hale getirmek. Boş zamanlarımda fotoğrafçılık yapıyor, kitap okuyorum ve açık kaynak projelere katkıda bulunuyorum.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Becerilerim</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript & React</li>
+            <li>Node.js & Express</li>
+            <li>Python & Django</li>
+            <li>UI/UX Tasarımı</li>
+            <li>Veritabanı Yönetimi (SQL & NoSQL)</li>
+            <li>Yapay Zeka & Makine Öğrenimi</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projelerim</h2>
+        <div class="project">
+            <h3>AI Destekli Chatbot</h3>
+            <p>Kullanıcı etkileşimlerini optimize eden, doğal dil işleme tabanlı bir chatbot uygulaması. React ve Node.js ile geliştirildi.</p>
+        </div>
+        <div class="project">
+            <h3>E-Ticaret Platformu</h3>
+            <p>Responsive ve güvenli bir e-ticaret sitesi. Kullanıcı deneyimini ön planda tutarak tasarlandı, Python ve Django kullanıldı.</p>
+        </div>
+        <div class="project">
+            <h3>Mobil Sağlık Uygulaması</h3>
+            <p>İOS ve Android için geliştirilen, sağlık takibi yapan bir uygulama. Veri güvenliği ve kullanıcı gizliliği öncelikli.</p>
+        </div>
+        <div class="project">
+            <h3>Açık Kaynak Kütüphane</h3>
+            <p>Web geliştiricileri için yardımcı araçlar içeren bir JavaScript kütüphanesi. GitHub'da aktif olarak geliştiriliyor.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>İletişim</h2>
+        <p>Bana ulaşmak için aşağıdaki formu doldurun veya sosyal medya hesaplarımı ziyaret edin.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+        <p>Sosyal Medya: <a href="#" style="color: #4ecdc4;">LinkedIn</a> | <a href="#" style="color: #4ecdc4;">GitHub</a> | <a href="#" style="color: #4ecdc4;">Twitter</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Orhun Efe. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        // Basit bir animasyon için JavaScript
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        // Başlangıçta görünürlük ayarı
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.5s, transform 0.5s';
+        });
+    </script>
 </body>
 </html>
